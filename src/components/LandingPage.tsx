@@ -42,9 +42,9 @@ export function LandingPage({ onViewChange }) {
   ];
 
   const stats = [
-    { number: "50,000+", label: "Students Guided" },
-    { number: "500+", label: "Career Paths" },
-    { number: "1000+", label: "Colleges Listed" },
+    { number: "500+", label: "Students Guided" },
+    { number: "50+", label: "Career Paths" },
+    { number: "12+", label: "Colleges Listed" },
     { number: "95%", label: "Success Rate" }
   ];
 
@@ -109,7 +109,7 @@ export function LandingPage({ onViewChange }) {
                 onClick={() => onViewChange("register")}
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
-                Get Started Free
+                Get Started
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button

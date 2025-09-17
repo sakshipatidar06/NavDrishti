@@ -54,9 +54,9 @@ export function MainDashboard({ user, onViewChange }) {
   ];
 
   const quickStats = [
-    { label: "Career Paths", value: "500+", icon: Target },
-    { label: "Colleges Listed", value: "1000+", icon: Building2 },
-    { label: "Scholarships", value: "200+", icon: Award },
+    { label: "Career Paths", value: "100+", icon: Target },
+    { label: "Colleges Listed", value: "12+", icon: Building2 },
+    { label: "Scholarships", value: "50+", icon: Award },
     { label: "Success Rate", value: "95%", icon: TrendingUp }
   ];
 

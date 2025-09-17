@@ -33,7 +33,7 @@ export function TimelinePage({ onViewChange }) {
     },
     {
       name: "Mukhyamantri Medhavi Student Scheme (MMVY)",
-      eligibility: "MP domiciled students; good marks in 12th / entrance exams; family income limit",
+      eligibility: "MP domiciled students; good marks in 12th / entrance exams; family income limit as per guidelines",
       benefits: "Financial assistance, fee support for professional/UG courses",
       category: "Merit-based",
       deadline: "March 2025",
@@ -329,7 +329,7 @@ export function TimelinePage({ onViewChange }) {
                     >
                       All Scholarships
                     </Button>
-                    <Button
+                    {/* <Button
                       variant={selectedCategory === "state" ? "default" : "outline"}
                       onClick={() => setSelectedCategory("state")}
                       className="rounded-full"
@@ -356,7 +356,7 @@ export function TimelinePage({ onViewChange }) {
                       className="rounded-full"
                     >
                       Category-based
-                    </Button>
+                    </Button> */}
                   </div>
                 </CardContent>
               </Card>
@@ -426,10 +426,10 @@ export function TimelinePage({ onViewChange }) {
                             <ExternalLink className="w-4 h-4 mr-2" />
                             Apply Now
                           </Button>
-                          <Button variant="outline" className="flex-1">
+                          {/* <Button variant="outline" className="flex-1">
                             <Bell className="w-4 h-4 mr-2" />
                             Set Reminder
-                          </Button>
+                          </Button> */}
                         </div>
                       </CardContent>
                     </Card>
@@ -438,7 +438,7 @@ export function TimelinePage({ onViewChange }) {
               </div>
 
               {/* Application Tips */}
-              <Card className="bg-gradient-to-r from-green-600 to-blue-600 border-0 shadow-xl text-white">
+              {/* <Card className="bg-gradient-to-r from-green-600 to-blue-600 border-0 shadow-xl text-white">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold mb-4 flex items-center">
                     <CheckCircle className="w-8 h-8 mr-3" />
@@ -466,7 +466,7 @@ export function TimelinePage({ onViewChange }) {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
+              </Card> */}
             </motion.div>
           </TabsContent>
 
@@ -511,7 +511,7 @@ export function TimelinePage({ onViewChange }) {
                             <div className="space-y-3">
                               <div className="flex items-start justify-between">
                                 <h4 className="font-semibold text-gray-900">{exam.name}</h4>
-                                <Badge variant="outline">{exam.level}</Badge>
+                                {/* <Badge variant="outline">{exam.level}</Badge> */}
                               </div>
                               
                               <div className="space-y-2 text-sm text-gray-600">
@@ -536,10 +536,10 @@ export function TimelinePage({ onViewChange }) {
                                   <ExternalLink className="w-3 h-3 mr-1" />
                                   Register
                                 </Button>
-                                <Button size="sm" variant="outline" className="flex-1">
+                                {/* <Button size="sm" variant="outline" className="flex-1">
                                   <Bell className="w-3 h-3 mr-1" />
                                   Remind
-                                </Button>
+                                </Button> */}
                               </div>
                             </div>
                           </div>
@@ -550,7 +550,7 @@ export function TimelinePage({ onViewChange }) {
                 </motion.div>
               ))}
 
-              {/* Exam Preparation Tips */}
+              {/* Exam Preparation Tips
               <Card className="bg-gradient-to-r from-purple-600 to-pink-600 border-0 shadow-xl text-white">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold mb-4 flex items-center">
@@ -587,7 +587,7 @@ export function TimelinePage({ onViewChange }) {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
+              </Card> */}
             </motion.div>
           </TabsContent>
         </Tabs>
