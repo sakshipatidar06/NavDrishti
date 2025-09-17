@@ -41,40 +41,49 @@ export function LandingPage({ onViewChange }) {
     }
   ];
 
+<<<<<<< HEAD
   const stats = [
     { number: "500+", label: "Students Guided" },
     { number: "50+", label: "Career Paths" },
     { number: "12+", label: "Colleges Listed" },
     { number: "95%", label: "Success Rate" }
   ];
+=======
+  // const stats = [
+  //   { number: "500+", label: "Students Guided" },
+  //   { number: "100+", label: "Career Paths" },
+  //   { number: "50+", label: "Colleges Listed" },
+  //   { number: "90%", label: "Success Rate" }
+  // ];
+>>>>>>> a0567135e44a5ed6a92551184e022d2fc8f8952c
 
-  const testimonials = [
-    {
-      name: "Priya Sharma",
-      role: "Engineering Student",
-      content: "NavDrishti helped me choose the right engineering stream. The AI recommendations were spot-on!",
-      rating: 5
-    },
-    {
-      name: "Rahul Kumar",
-      role: "Medical Aspirant",
-      content: "The assessment test revealed my potential in medicine. Now I'm pursuing MBBS with confidence.",
-      rating: 5
-    },
-    {
-      name: "Ananya Patel",
-      role: "Commerce Student",
-      content: "The career roadmap feature is amazing. It showed me exactly what to do after 12th.",
-      rating: 5
-    }
-  ];
+  // const testimonials = [
+  //   {
+  //     name: "Priya Sharma",
+  //     role: "Engineering Student",
+  //     content: "NavDrishti helped me choose the right engineering stream. The AI recommendations were spot-on!",
+  //     rating: 5
+  //   },
+  //   {
+  //     name: "Rahul Kumar",
+  //     role: "Medical Aspirant",
+  //     content: "The assessment test revealed my potential in medicine. Now I'm pursuing MBBS with confidence.",
+  //     rating: 5
+  //   },
+  //   {
+  //     name: "Ananya Patel",
+  //     role: "Commerce Student",
+  //     content: "The career roadmap feature is amazing. It showed me exactly what to do after 12th.",
+  //     rating: 5
+  //   }
+  // ];
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % testimonials.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, []);
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+  //   }, 5000);
+  //   return () => clearInterval(timer);
+  // }, []);
 
   return (
     <div className="min-h-screen">
@@ -160,89 +169,7 @@ export function LandingPage({ onViewChange }) {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Trusted by Thousands
-            </h2>
-            <p className="text-xl opacity-90">
-              Join the growing community of successful students
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="text-center"
-              >
-                <div className="text-4xl md:text-5xl font-bold mb-2">{stat.number}</div>
-                <div className="text-lg opacity-90">{stat.label}</div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              What Students Say
-            </h2>
-            <p className="text-xl text-gray-600">
-              Real experiences from students who found their path
-            </p>
-          </div>
-
-          <div className="relative max-w-4xl mx-auto">
-            <Card className="bg-white shadow-xl border-0 overflow-hidden">
-              <CardContent className="p-8">
-                <motion.div
-                  key={currentSlide}
-                  initial={{ opacity: 0, x: 50 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -50 }}
-                  transition={{ duration: 0.5 }}
-                  className="text-center space-y-6"
-                >
-                  <div className="flex justify-center space-x-1">
-                    {[...Array(testimonials[currentSlide].rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                    ))}
-                  </div>
-                  <blockquote className="text-xl text-gray-700 italic">
-                    "{testimonials[currentSlide].content}"
-                  </blockquote>
-                  <div>
-                    <div className="font-semibold text-gray-900">{testimonials[currentSlide].name}</div>
-                    <div className="text-gray-600">{testimonials[currentSlide].role}</div>
-                  </div>
-                </motion.div>
-              </CardContent>
-            </Card>
-
-            <div className="flex justify-center mt-6 space-x-2">
-              {testimonials.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentSlide(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    index === currentSlide ? 'bg-blue-600' : 'bg-gray-300'
-                  }`}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-purple-600 to-blue-600 text-white">
