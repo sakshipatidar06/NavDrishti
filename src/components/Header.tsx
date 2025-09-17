@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "./ui/button";
 import { Menu, X, User, LogOut, ArrowLeft } from "lucide-react";
 
+
 export function Header({ currentView, onViewChange, user, onLogout }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
