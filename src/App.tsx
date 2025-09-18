@@ -2,15 +2,15 @@ import { useState } from "react";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { LandingPage } from "./components/LandingPage";
-import { AboutUs } from "./components/AboutUs";
-import { AuthPages } from "./components/AuthPages";
-import { MainDashboard } from "./components/MainDashboard";
-import { StudentPage } from "./components/StudentPage";
-import { InstitutePage } from "./components/InstitutePage";
-import { TimelinePage } from "./components/TimelinePage";
-import { ParentsPage } from "./components/ParentsPage";
-import { ScholarshipPage } from "./components/ScholarshipPage";
-import { ExamPage } from "./components/ExamPage";
+// import { AboutUs } from "./components/AboutUs";
+// import { AuthPages } from "./components/AuthPages";
+// import { MainDashboard } from "./components/MainDashboard";
+// import { StudentPage } from "./components/StudentPage";
+// import { InstitutePage } from "./components/InstitutePage";
+// import { TimelinePage } from "./components/TimelinePage";
+// import { ParentsPage } from "./components/ParentsPage";
+// import { ScholarshipPage } from "./components/ScholarshipPage";
+// import { ExamPage } from "./components/ExamPage";
 
 export default function App() {
   const [currentView, setCurrentView] = useState("landing");
