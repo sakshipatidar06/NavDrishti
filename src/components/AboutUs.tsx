@@ -1,5 +1,5 @@
 import { Card, CardContent } from "./ui/card";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ImageWithFallback } from "./image/ImageWithFallback";
 import { 
   Brain, 
   Target, 

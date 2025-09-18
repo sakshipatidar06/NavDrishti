@@ -41,49 +41,40 @@ export function LandingPage({ onViewChange }) {
     }
   ];
 
-<<<<<<< HEAD
+
   const stats = [
     { number: "500+", label: "Students Guided" },
     { number: "50+", label: "Career Paths" },
     { number: "12+", label: "Colleges Listed" },
     { number: "95%", label: "Success Rate" }
   ];
-=======
-  // const stats = [
-  //   { number: "500+", label: "Students Guided" },
-  //   { number: "100+", label: "Career Paths" },
-  //   { number: "50+", label: "Colleges Listed" },
-  //   { number: "90%", label: "Success Rate" }
-  // ];
->>>>>>> a0567135e44a5ed6a92551184e022d2fc8f8952c
+  const testimonials = [
+    {
+      name: "Priya Sharma",
+      role: "Engineering Student",
+      content: "NavDrishti helped me choose the right engineering stream. The AI recommendations were spot-on!",
+      rating: 5
+    },
+    {
+      name: "Rahul Kumar",
+      role: "Medical Aspirant",
+      content: "The assessment test revealed my potential in medicine. Now I'm pursuing MBBS with confidence.",
+      rating: 5
+    },
+    {
+      name: "Ananya Patel",
+      role: "Commerce Student",
+      content: "The career roadmap feature is amazing. It showed me exactly what to do after 12th.",
+      rating: 5
+    }
+  ];
 
-  // const testimonials = [
-  //   {
-  //     name: "Priya Sharma",
-  //     role: "Engineering Student",
-  //     content: "NavDrishti helped me choose the right engineering stream. The AI recommendations were spot-on!",
-  //     rating: 5
-  //   },
-  //   {
-  //     name: "Rahul Kumar",
-  //     role: "Medical Aspirant",
-  //     content: "The assessment test revealed my potential in medicine. Now I'm pursuing MBBS with confidence.",
-  //     rating: 5
-  //   },
-  //   {
-  //     name: "Ananya Patel",
-  //     role: "Commerce Student",
-  //     content: "The career roadmap feature is amazing. It showed me exactly what to do after 12th.",
-  //     rating: 5
-  //   }
-  // ];
-
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     setCurrentSlide((prev) => (prev + 1) % testimonials.length);
-  //   }, 5000);
-  //   return () => clearInterval(timer);
-  // }, []);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div className="min-h-screen">

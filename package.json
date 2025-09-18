@@ -1,5 +1,5 @@
 {
-      "name": "Career Guidance Web App",
+      "name": "career-guidance-web-app",
       "version": "0.1.0",
       "private": true,
       "dependencies": {
@@ -56,5 +56,17 @@
       "scripts": {
             "dev": "vite",
             "build": "vite build"
-      }
+      },
+      "description": "welcome to Nav-Drishti",
+      "main": "eslint.config.js",
+      "repository": {
+            "type": "git",
+            "url": "git+https://github.com/renuka-2005/hackathon.git"
+      },
+      "author": "",
+      "license": "ISC",
+      "bugs": {
+            "url": "https://github.com/renuka-2005/hackathon/issues"
+      },
+      "homepage": "https://github.com/renuka-2005/hackathon#readme"
 }
